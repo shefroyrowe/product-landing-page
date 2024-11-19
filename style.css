@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swa);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Ubuntu, sans-srif;
+}
+
+/*Header*/
+
+#hero {
+  border-bottom: 1px solid blue;
+}
+
+#header-img {
+  display: block;
+  margin: 5em auto 0;
+}
+
+ul li, 
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  background-color: lightblue;
+  width: 100%;
+  border-bottom: 1px solid blue;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: center;
+}
+
+#nav-bar ul li {
+  display: block;
+  margin: 1em;
+  color: blue;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#nav-bar ul li:hover,
+#nav-bar ul li>a:hover {
+  background-color: blue;
+  color: yellow;
+  border-radius: 6px;
+}
+
+.nav-link:visited {
+  color: orangered;
+}
+
+/*Product promo*/
+
+.the_q {
+  color: blue;
+  font-weight: bold;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+  line-height: 2em;
+}
+
+
+#video {
+  display: block;
+  margin: auto;
+}
+
+/*Form*/
+
+#social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+
+#social_icons a:nth-child(3) {
+  margin-left: 1em;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+#form p {
+  margin-right: 2rem
+}
+
+input {
+  margin: 1rem 0;
+  height: 2rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+#submit {
+  background-color: yellow;
+}
+
+footer {
+  background-color: lightblue;
+  padding: 2rem;
+  border-top: 1px solid blue;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer a,
+footer p{
+  color: blue;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+footer p {
+  color: black;
+  font-weight: normal;
+}
+
+footer p:hover {
+  text-decoration: underline;
+  text-decoration-color: orangered;
+}
+
+.color {
+  color: orangered;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-bar ul li {
+  margin: 0.8em;
+}
+
+iframe {
+  /* original dimentions: width="560" height="315"*/
+  width: 350px;
+}
+}
